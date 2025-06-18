@@ -9,13 +9,17 @@
 </head>
 <body>
   <header>
+    <script src="java.js"></script>
     <div class="logo">Mutara Arnold</div>
     <nav>
-      <a href="#">About</a>
-      <a href="#Contact">Contact</a>
+      <!-- <a href="#">About</a> -->
       <a href="#">Education</a>
       <a href="#projects">Projects</a>
+      <a href="#Contact">Contact Me</a>
+      <button class="download-btn" id="download-page" >Download Page</button>
+      <!-- <button class="download-btn" onclick="window.location.href='https://drive.google.com/file/d/1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q/view?usp=sharing'">Download CV</button> -->
     </nav>
+    
   </header>
 
   <section class="me">
@@ -26,8 +30,8 @@
           studying software engineering to enhance my skills in media and technology, while occasionally volunteering at nonprofits as a host like Peace and Love Proclaimers to amplify their messages.
       </p>
       <div class="me-text">
-        <button class="btn-primary">Github</button>
-        <button class="btn-secondary">LinkedIn</button>
+        <button class="btn-primary" id="Github">Github</button>
+        <button class="btn-secondary" id="LinkedIn">LinkedIn</button>
       </div>
     </div>
     <div class="me-image">
@@ -96,21 +100,40 @@
 
   <footer>
 
-    <h2 class="section-title"  id="Contact">Projects</h2>
+    <h2 class="section-title"  id="Contact">Contact Me</h2>
     <section class="contact-form">
-      <input type="text" placeholder="Name" />
-      <input type="email" placeholder="Email" />
-      <textarea rows="4" placeholder="Message"></textarea>
-      <button>Send</button>
+      <input type="text" placeholder="Name" id = "name"/>
+      <input type="email" placeholder="Email" id = "email"/>
+      <textarea rows="4" placeholder="Message" id = "message"></textarea>
+      <button type="submit" onclick="sendEmail()">Send</button>
     </section>
 
     <div class="social-icons">
       <img src="https://img.icons8.com/ios-filled/50/000000/facebook.png" alt="Facebook" />
       <img src="https://img.icons8.com/ios-filled/50/000000/twitter.png" alt="Twitter" />
       <img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" alt="Instagram" />
+      <img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="GitHub" id="github" />
+      <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn" id="LinkedIn" />
     </div>
+    
+    <p>© 2025 Mutara Arnold. All rights reserved.</p>
     <p>Made by Arnold 2025</p>
+    <br></br>
+    <img src="1(20).png"/>
   </footer>
+
+  <script src="java.js"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init({
+        publicKey: "vxVy82gC91SYshsrU",
+        });
+        })();
+    </script>
+  
 </body>
 </html>
 
