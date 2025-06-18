@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #a6684e46;
+  background-color: #ffffff;
   color: #333;
 }
 
@@ -106,10 +106,10 @@ nav a {
 
 .project-card {
   display: flex;
-  background: white;
+  background: #ffddce;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 100px 100px rgba(0, 0, 0, 0.05);
 }
 
 .project-card img {
@@ -137,7 +137,7 @@ nav a {
   align-self: start;
   padding: 0.5rem 1rem;
   border: none;
-  background: #a6674d;
+  background: #834b34;
   color: white;
   border-radius: 4px;
   cursor: pointer;
@@ -174,7 +174,7 @@ footer {
   text-align: center;
   padding: 2rem;
   background: #ffffff;
-  border-top: 2px solid #a6674d;
+  border-top: 2px solid #ffffff;
 }
 
 .social-icons img {
