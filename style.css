@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #f9f9f9;
+  background-color: #a6684e46;
   color: #333;
 }
 
@@ -29,45 +29,60 @@ nav a {
   font-weight: 500;
 }
 
-.hero {
+.me {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #fff9f3;
+  background: #ffffff;
   padding: 4rem;
-  border-radius: 0 0 50px 0;
+  /* border-radius: 0 0 50px 0; */
 }
 
-.hero-text {
+.me-image img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 0px;
+}
+
+.me-text {
   max-width: 50%;
 }
 
-.hero-text h1 {
+.me-text h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 
-.hero-text p {
+.me-text p {
   margin-bottom: 1.5rem;
 }
 
-.hero-buttons button {
-  padding: 0.6rem 1.2rem;
+.me-buttons button {
   margin-right: 1rem;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
+.btn-primary,
+.btn-secondary {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
 .btn-primary {
-  background: #ffb703;
+  background: #a6674d;
   color: white;
 }
 
 .btn-secondary {
   background: white;
-  border: 2px solid #ffb703;
-  color: #ffb703;
+  border: 2px solid #a6674d;
+  color: #a6674d;
 }
 
 .hero-image img {
@@ -122,7 +137,7 @@ nav a {
   align-self: start;
   padding: 0.5rem 1rem;
   border: none;
-  background: #000;
+  background: #a6674d;
   color: white;
   border-radius: 4px;
   cursor: pointer;
@@ -147,7 +162,7 @@ nav a {
 }
 
 .contact-form button {
-  background: #ffb703;
+  background: #a6674d;
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -158,8 +173,8 @@ nav a {
 footer {
   text-align: center;
   padding: 2rem;
-  background: #fff9f3;
-  border-top: 2px solid #ffb703;
+  background: #ffffff;
+  border-top: 2px solid #a6674d;
 }
 
 .social-icons img {
