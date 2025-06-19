@@ -10,6 +10,22 @@ body {
   color: #333;
 }
 
+ /* .navbar {
+    position: fixed;
+    top: 0;
+    left: 650px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #a6684d75;
+    color: white;
+    padding: 10px;
+    z-index: 100;
+  }
+   */
+  .content {
+    padding-top: 60px; /* Add padding to the content to avoid overlap */
+  }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -35,7 +51,6 @@ nav a {
   align-items: center;
   background: #ffffff;
   padding: 4rem;
-  /* border-radius: 0 0 50px 0; */
 }
 
 .me-image img {
@@ -204,8 +219,9 @@ background: #a6674d;
 footer {
   text-align: center;
   padding: 2rem;
-  background: #ffffff;
+  background: #a6674d;
   border-top: 2px solid #ffffff;
+
 }
 
 .social-icons img {

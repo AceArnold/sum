@@ -44,3 +44,20 @@ function sendEmail() {
 
   console.log(vars);
 }
+
+
+// this block is for the projects button functionality
+const projectButtons = document.getElementById('imgbtn');
+projectButtons.addEventListener('click', function() {
+    alert("There is currently no more information about this project. Please check back later.");
+});
+
+const projectButtons1 = document.getElementById('imgbtn1');
+projectButtons1.addEventListener('click', function() {
+    alert("There is currently no more information about this project. Please check back later.");
+});
+
+const projectButtons2 = document.getElementById('imgbtn2');
+projectButtons2.addEventListener('click', function() {
+    alert("There is currently no more information about this project. Please check back later.");
+});

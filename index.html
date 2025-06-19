@@ -7,12 +7,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>
-    <!-- <script src="java.js"></script> -->
     <div class="logo">Mutara Arnold</div>
-    <nav>
-      <!-- <a href="#">About</a> -->
+    <nav class="navbar">
+      <a href="#me">Home</a>
       <a href="#projects">Projects</a>
       <a href="#resume">Resume</a>
       <a href="#Contact">Contact Me</a>
@@ -53,10 +53,11 @@
           event included educational workshops on GBV causes and
           prevention strategies, interactive skill-building sessions, and
           engaging panel discussions with experts.</p>
-        <button>View Project</button>
+        <button id = "imgbtn">View Project</button>
       </div>
     </div>
     <br></br>
+
     <div class="project-card">
       <img src="1(114).jpg" alt="Project 2" />
       <div class="project-info">
@@ -67,10 +68,11 @@
             engaging episodes that explore topics such as workplace stress,
             grief, the impact of digital technology, family dynamics, trauma
             recovery, and the healing power of creativity.</p>
-        <button>View Project</button>
+        <button id = "imgbtn1">View Project</button>
       </div>
     </div>
     <br></br>
+
     <div class="project-card">
       <img src="1(13).JPG" alt="Project 3" />
       <div class="project-info">
@@ -81,24 +83,17 @@
             schools across Rwanda. This collaboration responds to critical challenges
             identified in Rwanda, including high rates of mental health disorders and
             substance use among youth. </p>
-        <button>View Project</button>
+        <button id = "imgbtn2">View Project</button>
       </div>
     </div>
-    <!-- <br></br>
-     <div class="project-card">
-      <img src="1(1).jpg" alt="Project 4" />
-      <div class="project-info">
-        <h3>Project Name</h3>
-        <p>Short description of the project. What it is, the technologies used, and your role.</p>
-        <button>View Project</button>
-      </div>
-    </div> -->
     
   </section>
 
   <br></br>
-  <!-- this block is for the resume section -->
 
+
+
+  <!-- this block is for the resume section -->
   <section class="resume" id="resume">
     <h1 class="section-title">Resume</h1>
     
@@ -112,6 +107,7 @@
             clients and businesses make informed decisions.
             I work as a freelance host managing events as an MC as well as a panel
             host in specific events.
+        </p>
           <br></br>
     
         <h3>Wajibu Start-up, 2024 - present</h3>
@@ -127,7 +123,6 @@
             connect with audiences to deliver impactful and memorable episodes.
             I research, plan, and produce engaging podcast episodes, ensuring
             high-quality content and a seamless listener experience.
-
         </p>
         <br></br>
 
@@ -137,8 +132,6 @@
             potential students coming into the program.
             In the Marketing department we worked with the lead to brain storm
             and create Social Media Marketing Campaigns as well as outreach.
-      
-
         </p>
       </div>
 
@@ -205,7 +198,6 @@
     <p>© 2025 Mutara Arnold. All rights reserved.</p>
     <p>Made by Arnold 2025</p>
     <br></br>
-    <img src="1(20).png"/>
   </footer>
 
   <script src="java.js"></script>
@@ -216,7 +208,7 @@
     <script type="text/javascript">
       (function(){
         emailjs.init("vxVy82gC91SYshsrU");
-        });
+      })();
     </script>
   
 </body>
