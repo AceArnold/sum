@@ -237,61 +237,10 @@ footer {
 
 
 /* AI assisted Responsive Styles */
-/* Tablet (768px and below) */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1.5rem 2rem;
-  }
-
-  nav a {
-    margin: 0.5rem 1rem 0.5rem 0;
-    display: inline-block;
-  }
-
-  .me {
-    flex-direction: column;
-    padding: 2rem;
-    text-align: center;
-  }
-
-  .me-text {
-    max-width: 100%;
-  }
-
-  .me-image img {
-    max-width: 100%;
-    margin-top: 2rem;
-  }
-
-  .Resume_item {
-    flex-direction: column;
-  }
-
-  .projects {
-    padding: 0 2rem;
-  }
-
-  .project-card {
-    flex-direction: column;
-  }
-
-  .project-card img {
-    width: 100%;
-  }
-}
-
 /* Mobile (480px and below) */
 @media (max-width: 480px) {
   body {
     font-size: 14px;
-  }
-
-  .logo {
-    display: flex; 
-    justify-content: center; 
-    align-items: center;
   }
 
   header {
@@ -325,20 +274,5 @@ footer {
 
   .social-icons img {
     width: 20px;
-  }
-}
-
-/* Large Screens (1024px and above) */
-@media (min-width: 1024px) {
-  .me-text h1 {
-    font-size: 3rem;
-  }
-
-  .projects {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .project-info p {
-    font-size: 1rem;
   }
 }
