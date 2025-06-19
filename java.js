@@ -1,6 +1,6 @@
+// this block is for the linkedin and github buttons
 const myButton = document.getElementById('Github');
 const myButton2 = document.getElementById('LinkedIn');
-
 myButton.addEventListener('click', function() {
     window.location.href = 'https://github.com/AceArnold';
 });
@@ -8,14 +8,31 @@ myButton2.addEventListener('click', function() {
     window.location.href = 'https://www.linkedin.com/in/mutara-arnold/';
 });
 
-const dwlbtn = document.querySelector('.download-btn');
 
+// this block is for the download button for the whole page
+const dwlbtn = document.getElementById('download-page');
 dwlbtn.addEventListener('click', () => {
-    printPage();
+    window.print();
 });
 
+
+// this block is for the download button for the CV in PDF
+const cv = document.getElementById('download-cv');
+cv.addEventListener('click', function() {
+    console.log("CV Downloaded");
+    const url = 'https://drive.google.com/uc?export=download&id=1AiZqUup3P-TXmgxCXoNKLRQ7I1H4d_G2'
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'Arnold_Mutara_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+});
+
+
+// this block is for the email sending functionality using EmailJS
 function sendEmail() {
-    
     let vars = {
         name: document.getElementById("name").value,
         email: document.getElementById("email").value,

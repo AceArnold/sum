@@ -9,15 +9,14 @@
 </head>
 <body>
   <header>
-    <script src="java.js"></script>
+    <!-- <script src="java.js"></script> -->
     <div class="logo">Mutara Arnold</div>
     <nav>
       <!-- <a href="#">About</a> -->
-      <a href="#">Education</a>
       <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
       <a href="#Contact">Contact Me</a>
       <button class="download-btn" id="download-page" >Download Page</button>
-      <!-- <button class="download-btn" onclick="window.location.href='https://drive.google.com/file/d/1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q/view?usp=sharing'">Download CV</button> -->
     </nav>
     
   </header>
@@ -39,6 +38,8 @@
     </div>
   </section>
 
+
+  <!-- this block is for the projects section -->
   <h2 class="section-title"  id="projects">Projects</h2>
   <section class="projects">
 
@@ -83,7 +84,7 @@
         <button>View Project</button>
       </div>
     </div>
-    <br></br>
+    <!-- <br></br>
      <div class="project-card">
       <img src="1(1).jpg" alt="Project 4" />
       <div class="project-info">
@@ -91,16 +92,91 @@
         <p>Short description of the project. What it is, the technologies used, and your role.</p>
         <button>View Project</button>
       </div>
-    </div>
+    </div> -->
     
   </section>
 
-  <br></br><br></br><br></br>
+  <br></br>
+  <!-- this block is for the resume section -->
 
+  <section class="resume" id="resume">
+    <h1 class="section-title">Resume</h1>
+    
+    <section class="Resume_item">
+      <div class="experience-item">
+        <h2>Work Experience</h2>
 
-  <footer>
+        <h3>Freelance Work, 2024 - present</h3>
+        <h4>Analysis & Event Hosting</h4>
+        <p>I analyze and interpret data to provide actionable insights that help my
+            clients and businesses make informed decisions.
+            I work as a freelance host managing events as an MC as well as a panel
+            host in specific events.
+          <br></br>
+    
+        <h3>Wajibu Start-up, 2024 - present</h3>
+        <h4>Country Representative</h4>
+        <p>I handle a wide range of actives such as client acquisitiion, sales,
+            business interests and bussiness representation in rwanda
+        </p>
+        <br></br>
 
-    <h2 class="section-title"  id="Contact">Contact Me</h2>
+        <h3>BCM Podcasts, 2024 - present</h3>
+        <h4>Podcast Host & Researcher</h4>
+        <p>I lead engaging podcast conversations, guide discussions, and
+            connect with audiences to deliver impactful and memorable episodes.
+            I research, plan, and produce engaging podcast episodes, ensuring
+            high-quality content and a seamless listener experience.
+
+        </p>
+        <br></br>
+
+        <h3>ALX Rwanda, 2023 - 2024</h3>
+        <h4>Call Center & Marketing</h4>
+        <p>In the Call Center department we worked directly with current and
+            potential students coming into the program.
+            In the Marketing department we worked with the lead to brain storm
+            and create Social Media Marketing Campaigns as well as outreach.
+      
+
+        </p>
+      </div>
+
+      <div class="education-item">
+        <h2>Education</h2>
+        <h3>BSc. (Hons) Software Engineering</h3>
+        <p>African Leadership University, 2024 - Present</p>
+        <br></br>
+        <h3>Certification in Data Analysis</h3>
+        <p>Explore AI Data Course | ALX Rwanda, 2023 - 2024</p>
+        <br></br>
+        <h3>High School Graduation Diploma </h3>
+        <p>Math-Physics-Computer Science | LYCEE DE KIGALI, 2018 - 2023</p>
+        <h3>GPA: 55 / 60</h3>
+        <br></br>
+          <h2>Skills</h2>
+          
+        <ul>
+          <li>Data Analysis</li>
+          <li>Event Hosting</li>
+          <li>Podcast Production</li>
+          <li>Client Acquisition</li>
+          <li>Sales and Business Representation</li>
+          <li>Social Media Marketing</li>
+        </ul>
+      </div>
+      <br></br>
+    </section>
+    <br></br>
+     <p>Download my CV to learn more about my skills and experiences.</p>
+    <br></br>
+    <button class="download-btn" id="download-cv">Download CV</button>
+  </section>  
+
+   
+
+<!-- this block is for the contact form -->
+ <h2 class="section-title"  id="Contact">Contact Me</h2>
     <section class="contact-form">
       <input type="text" placeholder="Name" id = "name"/>
       <input type="email" placeholder="Email" id = "email"/>
@@ -108,6 +184,7 @@
       <button type="submit" onclick="sendEmail()">Send</button>
     </section>
 
+  <footer>
     <div class="social-icons">
       <img src="https://img.icons8.com/ios-filled/50/000000/facebook.png" alt="Facebook" />
       <img src="https://img.icons8.com/ios-filled/50/000000/twitter.png" alt="Twitter" />
@@ -115,7 +192,16 @@
       <img src="https://img.icons8.com/ios-filled/50/000000/github.png" alt="GitHub" id="github" />
       <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" alt="LinkedIn" id="LinkedIn" />
     </div>
-    
+
+    <div class="contact-info">
+    <br></br>
+    <h3>Contact Info</h3>
+    <!-- <br></br> -->
+    <p>Email: <a href="mailto:a.mutara@alustudent.com">a.mutara@alustudent.com</a></p>
+    <p>Phone: <a href="tel:+250787976990">+250 787 976 990</a></p>
+    <p>Location: Kigali, Rwanda</p>
+    </div>
+    <br></br>
     <p>© 2025 Mutara Arnold. All rights reserved.</p>
     <p>Made by Arnold 2025</p>
     <br></br>
@@ -123,15 +209,14 @@
   </footer>
 
   <script src="java.js"></script>
+
   <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
     <script type="text/javascript">
       (function(){
-        emailjs.init({
-        publicKey: "vxVy82gC91SYshsrU",
+        emailjs.init("vxVy82gC91SYshsrU");
         });
-        })();
     </script>
   
 </body>

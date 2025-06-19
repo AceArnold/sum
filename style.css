@@ -145,6 +145,7 @@ nav a {
 }
 
 .contact-form {
+  justify-content: center;
   max-width: 600px;
   margin: 4rem auto;
   padding: 2rem;
@@ -177,11 +178,29 @@ background: #a6674d;
   background: #a6674d;
   color: white;
   border: none;
+
   padding: 0.75rem 1.5rem;
   border-radius: 6px;
   cursor: pointer;
 }
 
+.download-btn{
+  background: #a6674d;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.resume {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  margin: 2rem auto;
+}
 footer {
   text-align: center;
   padding: 2rem;
@@ -194,3 +213,28 @@ footer {
   margin: 0 0.5rem;
   vertical-align: middle;
 }
+
+.Resume_item {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.education-item, .experience-item {
+  flex: 1;
+  text-align: left;
+  padding: 1rem;
+  background: #f8f8f8;
+  border-radius: 8px;
+}
+
+.education-item h1,
+.education-item h2,
+.education-item h3,
+.experience-item h1,
+.experience-item h2,
+.experience-item h3 {
+  color: #a6674d;
+}
+
